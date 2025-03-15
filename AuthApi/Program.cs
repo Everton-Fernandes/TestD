@@ -90,6 +90,19 @@ builder.Services.AddSwaggerGen(c =>
 // Adicionar suporte a controllers
 builder.Services.AddControllers();
 
+// Configurar política de CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy =>
+        {
+            policy.AllowAnyOrigin() // Permite qualquer origem
+                  .AllowAnyMethod() // Permite qualquer método HTTP (GET, POST, etc.)
+                  .AllowAnyHeader(); // Permite qualquer cabeçalho
+        });
+});
+
+
 var app = builder.Build();
 
 // Configuração do middleware
@@ -99,10 +112,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Auth API v1"));
 }
 
-app.UseAuthentication();
-app.UseAuthorization();
-app.MapControllers();
-
 // Criar escopo para executar o seeding do banco
 
 using (var scope = app.Services.CreateScope())
@@ -111,5 +120,11 @@ using (var scope = app.Services.CreateScope())
     var dbContext = services.GetRequiredService<AppDbContext>();
     dbContext.Database.EnsureCreated();
 }
+
+app.UseCors("AllowAll"); // Aplicar CORS
+
+app.UseAuthentication();
+app.UseAuthorization();
+app.MapControllers();
 
 app.Run();

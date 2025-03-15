@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xybn9U6vk+k=",
+  "dgSpecHash": "nHU8Inbln9c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Everton\\Desktop\\VaiNaWeb\\AuthApi\\AuthApi.csproj",
+  "projectFilePath": "C:\\Users\\Everton\\Desktop\\VaiNaWeb\\TesteD\\AuthApi\\AuthApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Everton\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.3\\microsoft.aspnetcore.authentication.jwtbearer.9.0.3.nupkg.sha512",
     "C:\\Users\\Everton\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.3\\microsoft.aspnetcore.cryptography.internal.9.0.3.nupkg.sha512",
