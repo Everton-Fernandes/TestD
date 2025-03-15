@@ -1,0 +1,5 @@
+C:\Users\Everton\Desktop\VaiNaWeb\AuthApi\obj\Debug\net8.0\AuthApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Everton\Desktop\VaiNaWeb\AuthApi\obj\Debug\net8.0\AuthApi.AssemblyInfoInputs.cache
+C:\Users\Everton\Desktop\VaiNaWeb\AuthApi\obj\Debug\net8.0\AuthApi.AssemblyInfo.cs
+C:\Users\Everton\Desktop\VaiNaWeb\AuthApi\obj\Debug\net8.0\AuthApi.csproj.CoreCompileInputs.cache
+C:\Users\Everton\Desktop\VaiNaWeb\AuthApi\obj\Debug\net8.0\AuthApi.MvcApplicationPartsAssemblyInfo.cache
