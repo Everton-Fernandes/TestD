@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useAuth } from "../../context/AuthContext";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function LoginPage() {
   const { login, error } = useAuth();
@@ -63,6 +64,14 @@ export default function LoginPage() {
             {loading ? "Entrando..." : "Entrar"}
           </button>
         </form>
+        <div className="text-center mt-4">
+          <Link
+            href="/reset-password"
+            className="text-blue-500 hover:underline"
+          >
+            Esqueci minha senha
+          </Link>
+        </div>
       </div>
     </div>
   );

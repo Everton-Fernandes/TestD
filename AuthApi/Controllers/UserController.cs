@@ -7,9 +7,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AuthApi.Controllers
 {
+    // [Authorize(Roles = "Admin")]
     [Route("api/users")]
     [ApiController]
-    //[Authorize(Roles = "Admin")]
     public class UserController : ControllerBase
     {
         private readonly UserManager<User> _userManager;
